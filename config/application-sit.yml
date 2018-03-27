@@ -1,0 +1,14 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://voipdev.csa9auzq3toz.us-east-1.rds.amazonaws.com:5432/voipdev
+    username: voip
+    password: verizon1
+
+  jpa:
+    generate-ddl: false
+    properties:
+      hibernate:
+        temp.use_jdbc_metadata_defaults:false
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    show-sql: true
