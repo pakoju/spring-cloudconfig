@@ -1,4 +1,15 @@
-spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
-spring.datasource.username=postgres
-spring.datasource.password=passw0rd
-spring.jpa.generate-ddl=false
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: passw0rd
+
+  jpa:
+    generate-ddl: false
+    properties:
+      hibernate:
+        temp.use_jdbc_metadata_defaults:false
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
+    show-sql: true
+      
